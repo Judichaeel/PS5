@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    font-family: "Poppins";
+    background-image: url(../images/bg-dirt-5.png);
+    background-size: cover;
+}
+body::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+header{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1650px;
+    margin: 0 auto;
+    padding: 2.5em 1em;
+}
+header .gauche a:nth-child(1){
+    color: white !important; 
+}
+header a{
+    color: #adadad;
+    font-size: 2em;
+}
+header .gauche a,
+header .droite a
+{
+    margin-right: 80px;
+} 
+header .gauche,
+header .droite{
+    display: flex;
+    align-items: center;
+}
+header .droite a img{
+    height: 50px;
+    border-radius: 80px;
+}
+header .droite .temps{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 100;
+}
+#carousel .selected .infogame {
+    margin-top: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 1455px;
+    height: 250px;
+}
+#carousel :not(.selected) .infogame {
+    display: none;
+}
+#carousel .selected h1{
+    color: white;
+    text-align: left;
+}
+#carousel .selected button{
+    padding: 20px;
+    width: 200px;
+    background-color: #ffffff50;
+    color: white;
+    font-size: 1.3em;
+    border: 0px solid white;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#carousel .selected .infogame .boton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 300px;
+}
+#carousel .selected .infogame .boton h1{
+    width: 50px;
+    height: 20px;
+    border: 0px solid white;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: #ffffff50;
+}
+#carousel .selected .infogame .right{
+    margin-left: 1300px;
+}
